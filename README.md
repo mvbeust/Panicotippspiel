@@ -2,4 +2,4 @@
 
 www.panicotippspiel.com
 
-Das Tipppspiel - geschrieben mit php, Javascript und einem Google Sheets Backend
+Das Tippspiel - geschrieben mit php, Javascript und einem Google Sheets Backend
