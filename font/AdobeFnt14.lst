@@ -1,0 +1,413 @@
+%!Adobe-FontList 1.14
+%Locale:0x407
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\desktop.ini
+FileModTime:1426679274
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\desktop.ini
+FileModTime:1426679275
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Black
+FamilyName:Roboto
+StyleName:Black
+FullName:Roboto Black
+MenuName:Roboto
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Black.ttf
+DataFormat:sfntData
+FileLength:127948
+FileModTime:1433151351
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-BlackItalic
+FamilyName:Roboto
+StyleName:Black Italic
+FullName:Roboto Black Italic
+MenuName:Roboto
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-BlackItalic.ttf
+DataFormat:sfntData
+FileLength:134716
+FileModTime:1433151351
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Bold
+FamilyName:Roboto
+StyleName:Bold
+FullName:Roboto Bold
+MenuName:Roboto
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Bold.ttf
+DataFormat:sfntData
+FileLength:127744
+FileModTime:1433151351
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-BoldItalic
+FamilyName:Roboto
+StyleName:Bold Italic
+FullName:Roboto Bold Italic
+MenuName:Roboto
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-BoldItalic.ttf
+DataFormat:sfntData
+FileLength:134556
+FileModTime:1433151352
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Italic
+FamilyName:Roboto
+StyleName:Italic
+FullName:Roboto Italic
+MenuName:Roboto
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Italic.ttf
+DataFormat:sfntData
+FileLength:132440
+FileModTime:1433151352
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Light
+FamilyName:Roboto
+StyleName:Light
+FullName:Roboto Light
+MenuName:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Light.ttf
+DataFormat:sfntData
+FileLength:126792
+FileModTime:1433151352
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-LightItalic
+FamilyName:Roboto
+StyleName:Light Italic
+FullName:Roboto Light Italic
+MenuName:Roboto
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-LightItalic.ttf
+DataFormat:sfntData
+FileLength:133172
+FileModTime:1433151352
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Medium
+FamilyName:Roboto
+StyleName:Medium
+FullName:Roboto Medium
+MenuName:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Medium.ttf
+DataFormat:sfntData
+FileLength:127488
+FileModTime:1433151352
+WeightClass:500
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-MediumItalic
+FamilyName:Roboto
+StyleName:Medium Italic
+FullName:Roboto Medium Italic
+MenuName:Roboto
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-MediumItalic.ttf
+DataFormat:sfntData
+FileLength:134312
+FileModTime:1433151352
+WeightClass:500
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Regular
+FamilyName:Roboto
+StyleName:Regular
+FullName:Roboto Regular
+MenuName:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Regular.ttf
+DataFormat:sfntData
+FileLength:126072
+FileModTime:1433151352
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Thin
+FamilyName:Roboto
+StyleName:Thin
+FullName:Roboto Thin
+MenuName:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-Thin.ttf
+DataFormat:sfntData
+FileLength:127584
+FileModTime:1433151352
+WeightClass:250
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-ThinItalic
+FamilyName:Roboto
+StyleName:Thin Italic
+FullName:Roboto Thin Italic
+MenuName:Roboto
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\Roboto-ThinItalic.ttf
+DataFormat:sfntData
+FileLength:132860
+FileModTime:1433151352
+WeightClass:250
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Bold
+FamilyName:Roboto Condensed
+StyleName:Bold
+FullName:Roboto Condensed Bold
+MenuName:Roboto Condensed
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\RobotoCondensed-Bold.ttf
+DataFormat:sfntData
+FileLength:127340
+FileModTime:1433151352
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-BoldItalic
+FamilyName:Roboto Condensed
+StyleName:Bold Italic
+FullName:Roboto Condensed Bold Italic
+MenuName:Roboto Condensed
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\RobotoCondensed-BoldItalic.ttf
+DataFormat:sfntData
+FileLength:135504
+FileModTime:1433151352
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Italic
+FamilyName:Roboto Condensed
+StyleName:Italic
+FullName:Roboto Condensed Italic
+MenuName:Roboto Condensed
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\RobotoCondensed-Italic.ttf
+DataFormat:sfntData
+FileLength:133908
+FileModTime:1433151352
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Light
+FamilyName:Roboto Condensed
+StyleName:Light
+FullName:Roboto Condensed Light
+MenuName:Roboto Condensed
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\RobotoCondensed-Light.ttf
+DataFormat:sfntData
+FileLength:126168
+FileModTime:1433151352
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-LightItalic
+FamilyName:Roboto Condensed
+StyleName:Light Italic
+FullName:Roboto Condensed Light Italic
+MenuName:Roboto Condensed
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\RobotoCondensed-LightItalic.ttf
+DataFormat:sfntData
+FileLength:134544
+FileModTime:1433151352
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Regular
+FamilyName:Roboto Condensed
+StyleName:Regular
+FullName:Roboto Condensed Regular
+MenuName:Roboto Condensed
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\roboto\RobotoCondensed-Regular.ttf
+DataFormat:sfntData
+FileLength:125332
+FileModTime:1433151352
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\material-design-icons\desktop.ini
+FileModTime:1426679275
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\material-design-icons\LICENSE.txt
+FileModTime:1426677015
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\material-design-icons\Material-Design-Icons.eot
+FileModTime:1426677015
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\material-design-icons\Material-Design-Icons.svg
+FileModTime:1426677016
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Material-Design-Icons
+FamilyName:Material-Design-Icons
+StyleName:Regular
+FullName:Material-Design-Icons
+MenuName:Material-Design-Icons
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\material-design-icons\Material-Design-Icons.ttf
+DataFormat:sfntData
+FileLength:141528
+FileModTime:1426677016
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\Max\Google Drive\Tippspiel Saison 2014\Panicotippspiel\Font\material-design-icons\Material-Design-Icons.woff
+FileModTime:1426677016
+%EndFont
+

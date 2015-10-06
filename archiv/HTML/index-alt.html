@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Panicotippspiel</title>
+
+<!--Dokumente CSS-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+<!--Favicons-->
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+<!--Mobile Optimierungen-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="theme-color" content="#3f51b5">
+</head>
+
+<!--Hier beginnt der Body-->
+
+<body>
+<header> 
+  <!--Navigation-->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="tabelle.html">Tabelle anzeigen</a></li>
+    <li><a href="tipps-anzeigen.html">Tipps anzeigen</a></li>
+  </ul>
+  <nav class="indigo"> 
+    <!--Desktop Navigation-->
+    <div class="hide-on-med-and-down">
+      <div class="nav-wrapper container"> <a id="logo-container" href="index.html" class="brand-logo">Panicotippspiel</a>
+        <ul class="right">
+          <li  class="waves-effect waves-indigo"><a href="index.html">Tippspiel</a></li>
+          <li class="waves-effect waves-indigo"><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Tabelle und Tipps<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+          <li><a href="news.html">News</a>
+          <li>
+          <li><a href="stats.html"><i class="mdi-editor-insert-chart"></i></a></li>
+          <li><a href="addgames.html"><i class="mdi-content-add-circle-outline"></i></a></li>
+          <li class="waves-effect waves-indigo"><a href="javascript:history.go(0)"><i class="mdi-navigation-refresh"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Mobile Navigation-->
+    <div class="hide-on-large-only">
+      <div class="nav-wrapper"> <a id="logo-container" href="index.html" class="brand-logo">Panicotippspiel</a>
+        <ul id="slide-out" class="side-nav">
+          <li class="bold"><a href="#!"></a></li>
+          <li class="bold" style="font-weight: bold"><a href="index.html">Tippspiel</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li class="bold" style="font-weight: bold"><a class="collapsible-header" class="waves-effect waves-indigo">Tabelle &#38; Tipps</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="tabelle.html">Tabelle anzeigen</a></li>
+                    <li><a href="tipps-anzeigen.html">Tipps anzeigen</a></li>
+                  </ul>
+                </div>
+            </ul>
+          </li>
+          <li class="bold" style="font-weight: bold"><a href="news.html">News</a></li>
+          <li class="bold" style="font-weight: bold"><a href="stats.html">Statistiken</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> </div>
+    </div>
+    </div>	
+  </nav>
+</header>
+
+<!--Hauptinhalt beginnt hier-->
+
+<main>
+  <div class="container hide-on-small-only"> </br>
+    <!--Namenscard-->
+    <div class="card">
+      <div class="card-content">
+        <p class="hide-on-med-and-down">
+          <label>Name</label>
+          <select>
+            <option value="" disabled selected>bitte ausw&#228;hlen</option>
+            <option value="1">Francesco</option>
+            <option value="2">Hans</option>
+            <option value="3">Mario</option>
+            <option value="4">Max</option>
+          </select>
+        </p>
+        <p class="hide-on-large-only">
+          <label>Name</label>
+          <select class="browser-default">
+            <option value="" disabled selected></option>
+            <option value="1">Francesco</option>
+            <option value="2">Hans</option>
+            <option value="3">Mario</option>
+            <option value="4">Max</option>
+          </select>
+        </p>
+      </div>
+    </div>
+    
+    <!--Spielekarten-->
+    
+    <div class="row"> 
+      <!--Card 1-->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <p style="font-size:larger; font-weight:bold">FC Barcelona vs. Manchester City</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Champions League (Achtelfinale)</p>
+            <p>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM1" type="number" class="validate">
+              <label for="ScoreM1">Heim</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM2" type="number" class="validate">
+              <label for="ScoreM2">Gast</label>
+            </div>
+            </p>
+            </br>
+            <div>
+              <p class="hide-on-med-and-down col s12 m6">
+                <select>
+                  <option value="" disabled selected>L&#228;nge</option>
+                  <option value="1">90</option>
+                  <option value="2">120</option>
+                  <option value="3">11er</option>
+                </select>
+              </p>
+              <p class="hide-on-large-only col s12 m6" style="padding-bottom: 10px">
+                <select class="browser-default">
+                  <option value="" disabled selected>L&#228;nge</option>
+                  <option value="1">90</option>
+                  <option value="2">120</option>
+                  <option value="3">11er</option>
+                </select>
+              </p>
+              <p class="hide-on-med-and-down col s12 m6">
+                <select>
+                  <option value="" disabled selected>Sieger</option>
+                  <option value="1">FC Barcelona</option>
+                  <option value="2">Manchester City</option>
+                </select>
+              </p>
+              <p class="hide-on-large-only col s12 m6" style="padding-bottom: 20px">
+                <select class="browser-default">
+                  <option value="" disabled selected>Sieger</option>
+                  <option value="1">FC Barcelona</option>
+                  <option value="2">Mancester City</option>
+                </select>
+              </p>
+            </div>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Noch 1 Tag bis Anpfiff. Pokal R&#252;ckspiel am 30. November 2015.</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#F90">Tipps abgegeben: Max - Franz - Hans</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 2-->
+            <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <p style="font-size:larger; font-weight:bold">FC Barcelona vs. Manchester City</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Champions League (Achtelfinale)</p>
+            <p>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM1" type="number" class="validate">
+              <label for="ScoreM1">Heim</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM2" type="number" class="validate">
+              <label for="ScoreM2">Gast</label>
+            </div>
+            </p>
+            </br>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Noch 1 Tag bis Anpfiff. Pokal R&#252;ckspiel am 30. November 2015.</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#F90">Tipps abgegeben: Max - Franz - Hans</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 3-->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content"> </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Abschicken <i class="mdi-content-send right"></i> </button>
+  </div>
+  <div class="hide-on-med-and-up"> </br>
+    <!--Namenscard-->
+    <div class="card">
+      <div class="card-content">
+        <p class="hide-on-med-and-down">
+          <label>Name</label>
+          <select>
+            <option value="" disabled selected>bitte ausw&#228;hlen</option>
+            <option value="1">Francesco</option>
+            <option value="2">Hans</option>
+            <option value="3">Mario</option>
+            <option value="4">Max</option>
+          </select>
+        </p>
+        <p class="hide-on-large-only">
+          <label>Name</label>
+          <select class="browser-default">
+            <option value="" disabled selected></option>
+            <option value="1">Francesco</option>
+            <option value="2">Hans</option>
+            <option value="3">Mario</option>
+            <option value="4">Max</option>
+          </select>
+        </p>
+      </div>
+    </div>
+    
+    <!--Spielekarten-->
+    
+    <div class="row"> 
+      <!--Card 1-->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <p style="font-size:larger; font-weight:bold">FC Barcelona vs. Manchester City</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Champions League (Achtelfinale)</p>
+            <p>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM1" type="number" class="validate">
+              <label for="ScoreM1">Heim</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM2" type="number" class="validate">
+              <label for="ScoreM2">Gast</label>
+            </div>
+            </p>
+            </br>
+            <div>
+              <p class="hide-on-med-and-down col s12 m6">
+                <select>
+                  <option value="" disabled selected>L&#228;nge</option>
+                  <option value="1">90</option>
+                  <option value="2">120</option>
+                  <option value="3">11er</option>
+                </select>
+              </p>
+              <p class="hide-on-large-only col s12 m6" style="padding-bottom: 10px">
+                <select class="browser-default">
+                  <option value="" disabled selected>L&#228;nge</option>
+                  <option value="1">90</option>
+                  <option value="2">120</option>
+                  <option value="3">11er</option>
+                </select>
+              </p>
+              <p class="hide-on-med-and-down col s12 m6">
+                <select>
+                  <option value="" disabled selected>Sieger</option>
+                  <option value="1">FC Barcelona</option>
+                  <option value="2">Manchester City</option>
+                </select>
+              </p>
+              <p class="hide-on-large-only col s12 m6" style="padding-bottom: 20px">
+                <select class="browser-default">
+                  <option value="" disabled selected>Sieger</option>
+                  <option value="1">FC Barcelona</option>
+                  <option value="2">Mancester City</option>
+                </select>
+              </p>
+            </div>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Noch 1 Tag bis Anpfiff. Pokal R&#252;ckspiel am 30. November 2015.</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#F90">Tipps abgegeben: Max - Franz - Hans</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 2-->
+            <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <p style="font-size:larger; font-weight:bold">FC Barcelona vs. Manchester City</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Champions League (Achtelfinale)</p>
+            <p>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM1" type="number" class="validate">
+              <label for="ScoreM1">Heim</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input id="ScoreM2" type="number" class="validate">
+              <label for="ScoreM2">Gast</label>
+            </div>
+            </p>
+            </br>
+            <p style="font-size:smaller; font-weight:inherit; color:#999">Noch 1 Tag bis Anpfiff. Pokal R&#252;ckspiel am 30. November 2015.</p>
+            <p style="font-size:smaller; font-weight:inherit; color:#F90">Tipps abgegeben: Max - Franz - Hans</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 3-->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content"> </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Abschicken <i class="mdi-content-send right"></i> </button>
+  </div>
+</main>
+
+<!--Skripte--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script> 
+<script src="js/jquery.timeago.min.js"></script> 
+<script src="js/prism.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<script src="js/init.js"></script> 
+
+<!-- Footer beginnt hier-->
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Infos</h5>
+        <p class="grey-text text-lighten-4">Dieses Tippspiel ist eine private Seite, die von MvB geflegt wird. </br>
+          Kontakt: info@panicotippspiel.com</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="faq.html">Regeln und FAQ</a></li>
+          <li><a class="grey-text text-lighten-3" href="addgames.html">Neue Spiele hinzuf&#252;gen</a></li>
+          <li><a class="grey-text text-lighten-3" href="ergebnis.html">Ergebniseingabe</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container"> &#169; 2015 Panicotippspiel </div>
+  </div>
+</footer>
+</body>
+</html>

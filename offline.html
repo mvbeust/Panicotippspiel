@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+    <head>
+        <meta charset="UTF-8">
+        <title>Offline - Panicotippspiel</title>
+        <meta name="description" content="The offline backup version of Panicotippspiel." />
+        <!--Dokumente CSS-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <!--Favicons-->
+        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png?m=1">
+        <!--Mobile Optimierungen-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#3f51b5">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Tippspiel">
+    </head>
+    <body>
+        <header>
+            <!--Navigation-->
+            <div class="row">
+                <div class="col s12">
+                    <div class="card orange">
+                        <div class="card-content"> <span class="card-title"><i class="mdi-alert-warning"></i> Offline</span>
+                            <p class="white-text">Entweder dein Gerät, oder der Server ist offline.</br>Bitte immer erst neu versuchen, bevor man das Backup versucht. Danke!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="javascript:history.go(0)" class="white-text"><i class="mdi-action-cached"></i> Neu versuchen</a>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.panicotippspiel.com" target="_self" class="white-text"><i class="mdi-action-home"></i> Go Back Home</a>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://www.panicotippspiel.altervista.org" target="_self" class="white-text"><i class="mdi-action-backup"></i> Backup aufrufen</a>
+                        </div>
+                        <div class="card-action">
+                            <a href="/faq.php" target="_self" class="white-text"><i class="mdi-action-help"></i> Hilfe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer></footer>
+    </body>
+</html>

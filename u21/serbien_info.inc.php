@@ -1,0 +1,19 @@
+<li><!--Land: Serbien-->
+  <div class="collapsible-header"> <img src="http://www.nationalflaggen.de/images/flaggen/flagge-serbien-flagge-rechteckig-50x75.gif" class="circle" style="width:15px; height:15px; vertical-align:middle"><b style="vertical-align:middle">   Serbien</b></div>
+  <div class="collapsible-body" style="background-color:#F5F5F5">
+    <p>Like Jojic, Serbia are a difficult proposition to read. On their day they are capable of beating any team, as proven against Spain late last year. But, in the same qualification process, they were also defeated by lowly Cyprus. It makes it tough to decide what should be regarded as par for the Serbs, although they will probably have aspirations of reaching the last four.</p>
+    <div class="divider"></div>
+    <p style="background:#FBFBFB"> <b>Kurzinfo</b><br />
+      Serbien sorgte in der Qualifikation für die größte Überraschung, als in den Play-offs Titelverteidiger Spanien ausgeschaltet wurde. Nach einem torlosen Hinspiel wurde der Champion von 2011 und 2013 erstmals seit 35 Pflichtspielen geschlagen. Das 2:1 in Cadiz ist ein Indikator für das Potenzial, das in den Serben steckt.</br>
+    Trainer Radovan Ćurčić sprach von einer "Mission impossible", als Serbien in der Qualifikationsgruppe 9 Italien und Belgien zugelost wurde. Aber gegen Belgien wurden vier Zähler geholt, darunter ein 3:0-Auswärtssieg, und gegen Italien drei. So belegten sie am Ende hinter den Azzurrini Platz zwei und kamen als viertbester Gruppenzweiter weiter. Es wäre noch einfacher gewesen, wenn sie nicht am vorletzten Spieltag in Italien eine 2:0-Führung verschenkt und noch verlören hätten.</br>
+      Serbiens Erfolg ist umso beeindruckender, wenn man sich die Herausforderungen betrachtet, denen Ćurčić gegenüberstand. Torhüter Predrag Rajković, Verteidiger Matija Nastasić, die Mittelfeldspieler Miloš Jojić und Filip Djuričić sowie die Stürmer Aleksandar Mitrović und Lazar Marković wurden in die A-Nationalmannschaft berufen, während Kapitän Marko Petković zu jenen vier Schlüsselspielern gehörte, die wegen Verletzungen nicht immer dabei waren.</br>
+     Doch Ćurčić hat aus der Not eine Tugend gemacht und aus Mitgliedern der Mannschaft, die 2013 die UEFA-U19-Europameisterschaft gewannen, eine Einheit geformt. Großen Anteil daran hatte auch Verteidiger Miloš Veljković. "Diese Spieler haben gezeigt, was den Fußball zu einem großartigen Sport macht: Mannschaftsgeist, Zusammengehörigkeit und vor allem der Wunsch, 100 Prozent für unser Land zu geben", sagte Ćurčić.</br>
+      Es ist das erste Mal seit 2009, dass Serbien wieder die Endrunde erreicht hat, sie können dennoch auf eine erfolgreiche Historie in diesem Wettbewerb zurückblicken. 1978 gewannen sie, damals noch als Jugoslawien, die erste Ausgabe dieses Turniers, während danach vier weitere Turniere erreicht wurden: 1990 als Jugoslawien, 2004 als Serbien und Montenegro und 2007 und 2009 als Serbien. Ćurčić freut sich, dass seine Mannschaft wieder im Konzert der Großen mitspielt. "Die Qualifikation bedeutet für jeden im serbischen Fußball eine Menge", sagte er.</p>
+    <div class="divider"></div>
+    <p style="background:#F5F5F5"> <b>Star: Milos Jojic</b><br />
+    It's been a difficult few months for Jojic at Borussia Dortmund, but this tournament provides the 23-year-old with the opportunity to thrive. In the Bundesliga, he was played in the centre of midfield, whereas Dodic is happy to let Jojic play in a more natural wide position. Out there he can be more unpredictable, helped by the fact that he is comfortable using either foot.</p>
+    <div class="divider"></div>
+    <p style="background:#FBFBFB"> <b>Links</b><br />
+      <a href="http://de.uefa.com/under21/season=2015/teams/team=200147/squad/index.html">Mannschaft</a></p>
+  </div>
+</li><!--ENDE Serbien-->

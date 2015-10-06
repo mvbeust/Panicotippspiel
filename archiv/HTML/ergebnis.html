@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ergebnis - Panicotippspiel</title>
+
+<!--Dokumente CSS-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+<!--Favicons-->
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+<!--Mobile Optimierungen-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="theme-color" content="#3f51b5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tippspiel">
+<script src="js/stay_standalone.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- STARTUP IMAGES -->
+
+<!-- iPad retina portrait startup image -->
+<link href="apple-touch-startup-image-1536x2008.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 2)
+                 and (orientation: portrait)"
+          rel="apple-touch-startup-image">
+
+<!-- iPad retina landscape startup image -->
+<link href="apple-touch-startup-image-1496x2048.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 2)
+                 and (orientation: landscape)"
+          rel="apple-touch-startup-image">
+
+<!-- iPad non-retina portrait startup image -->
+<link href="apple-touch-startup-image-768x1004.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 1)
+                 and (orientation: portrait)"
+          rel="apple-touch-startup-image">
+
+<!-- iPad non-retina landscape startup image -->
+<link href="apple-touch-startup-image-748x1024.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 1)
+                 and (orientation: landscape)"
+          rel="apple-touch-startup-image">
+
+<!-- iPhone 6 Plus portrait startup image -->
+<link href="apple-touch-startup-image-1242x2148.png"
+          media="(device-width: 414px) and (device-height: 736px)
+                 and (-webkit-device-pixel-ratio: 3)
+                 and (orientation: portrait)"
+          rel="apple-touch-startup-image">
+
+<!-- iPhone 6 Plus landscape startup image -->
+<link href="apple-touch-startup-image-1182x2208.png"
+          media="(device-width: 414px) and (device-height: 736px)
+                 and (-webkit-device-pixel-ratio: 3)
+                 and (orientation: landscape)"
+          rel="apple-touch-startup-image">
+
+<!-- iPhone 6 startup image -->
+<link href="apple-touch-startup-image-750x1294.png"
+          media="(device-width: 375px) and (device-height: 667px)
+                 and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+<!-- iPhone 5 startup image -->
+<link href="apple-touch-startup-image-640x1096.png"
+          media="(device-width: 320px) and (device-height: 568px)
+                 and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+<!-- iPhone < 5 retina startup image -->
+<link href="apple-touch-startup-image-640x920.png"
+          media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+<!-- iPhone < 5 non-retina startup image -->
+<link href="apple-touch-startup-image-320x460.png"
+          media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 1)"
+          rel="apple-touch-startup-image">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53692728-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1_k0XrSfns-WnukwEubctqHUcA1RafVWjAnFhPDiDNOc/pubhtml?';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: function(data, tabletop) {console.log(data), Test(data)},
+					 wanted: ["Ergebnis Ausgabe"],
+                     simpleSheet: true } )				 
+					 						 
+  }
+  function Test(data){
+	//Anfang Spiel1 
+	//Daten abrufen  
+	var Spiel1Art = data[0].Art;
+	var Spiel1M1 = data[0].M1;
+	var Spiel1M2 = data[0].M2;
+	var Spiel1Beschreibung = data[0].Beschreibung;
+	var Spiel1Datum = data[0].Datum;
+	var Spiel1Abgegeben = data[0].Abgegeben;
+	var Spiel1Nummer = data[0].Nr;
+	Spiel1NummerOutput = "<select name='Spiel1Nr'><option>" + Spiel1Nummer + "</option></select><select name='wer'><option>Ergebnis</option></select>"
+	//Findet Spiel statt?
+	if (Spiel1Art == "Kein"){
+		//Kein Spiel findet statt
+		Spiel1Output = "<div class='col s12 m6'><div class='card-panel orange'><span class='white-text'>Alle Ergebnisse eingetragen!</span></div></div>"
+	} else {
+		    $('select').material_select();
+		Spiel1Output = "<div class='col s12 m6'><div class='card'><div class='card-content'><p style='font-size:larger; font-weight:bold'>"+ Spiel1M1 + " vs. " + Spiel1M2 + "</p><p style='font-size:smaller; font-weight:inherit; color:#999'>" + Spiel1Beschreibung + "</p><p><div class='input-field col s12 m6'><input id='Spiel11M1id' type='number' class='validate' name='Spiel1ScoreM1'><label for='Spiel11M1id'>Heim</label></div><div class='input-field col s12 m6'><input id='Spiel11M2id' type='number' class='validate' name='Spiel1ScoreM2'><label for='Spiel11M2id'>Gast</label></div></p><div><p class='hide-on-med-and-down col s12 m6'><select name='Spiel1Length'><option value='' disabled selected>L&#228;nge</option><option value='90'>90</option><option value='120'>120</option><option value='11er'>11er</option></select></p><p class='hide-on-large-only col s12 m6' style='padding-bottom: 10px'><select class='browser-default' name='Spiel1Length'><option value='' disabled selected>L&#228;nge</option><option value='90'>90</option><option value='120'>120</option><option value='11er'>11er</option></select></p><p class='hide-on-med-and-down col s12 m6'><select name='Spiel1Sieger'><option value='' disabled selected>Sieger</option><option value='" + Spiel1M1 + "'>" + Spiel1M1 + "</option><option value='" + Spiel1M2 + "'>" + Spiel1M2 + "</option><option value='Unentschieden'>Unentschieden</option></select></p><p class='hide-on-large-only col s12 m6' style='padding-bottom: 20px'><select class='browser-default' name='Spiel1Sieger'><option value='' disabled selected>Sieger</option><option value='" + Spiel1M1 + "'>" + Spiel1M1 + "</option><option value='" + Spiel1M2 + "'>" + Spiel1M2 + "</option><option value='Unentschieden'>Unentschieden</option></select></p></div><p style='font-size:smaller; font-weight:inherit; color:#999'>" + Spiel1Datum + "</p><p style='font-size:smaller; font-weight:inherit; color:#F90'>" + Spiel1Abgegeben + "</p></div></div>";
+	}
+	document.getElementById("Spiel1Name").innerHTML=Spiel1Output;
+	document.getElementById("Spiel1").innerHTML=Spiel1NummerOutput;
+	//Ende Spiel1
+	$(document).ready(function() {
+    $('select').material_select();
+	$('#progress').remove();
+  });
+  }
+
+  
+</script>
+</head>
+
+<!--Hier beginnt der Body-->
+
+<body  onLoad="init()">
+<header> 
+  <!--Navigation-->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="tabelle.html">Tabelle anzeigen</a></li>
+    <li><a href="tipps-anzeigen.html">Tipps anzeigen</a></li>
+  </ul>
+  <nav class="indigo"> 
+    <!--Desktop Navigation-->
+    <div class="hide-on-med-and-down">
+      <div class="nav-wrapper container"> <a id="logo-container" href="index.html" class="brand-logo" style="font-weight:300">Panicotippspiel</a>
+        <ul class="right">
+          <li  class="waves-effect waves-indigo"><a href="index.html">Tippspiel</a></li>
+          <li class="waves-effect waves-indigo"><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Tabelle und Tipps<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+          <li class="waves-effect waves-indigo"><a href="news.html">News</a></li>
+          <li class="waves-effect waves-indigo"><a href="stats.html"><i class="mdi-editor-insert-chart"></i></a></li>
+          <li class="waves-effect waves-indigo"><a href="addgames.html"><i class="mdi-content-add-circle-outline"></i></a></li>
+          <li class="waves-effect waves-indigo"><a href="javascript:history.go(0)"><i class="mdi-navigation-refresh"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Mobile Navigation-->
+    <div class="hide-on-large-only">
+      <div class="nav-wrapper"> <a id="logo-container" href="index.html" class="brand-logo">Panicotippspiel</a>
+        <ul id="slide-out" class="side-nav">
+          <li class="bold"><a href="#!"></a></li>
+          <li class="bold" style="font-weight: bold"><a href="index.html">Tippspiel</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li class="bold" style="font-weight: bold"><a class="collapsible-header" class="waves-effect waves-indigo">Tabelle &#38; Tipps</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="tabelle.html">Tabelle anzeigen</a></li>
+                    <li><a href="tipps-anzeigen.html">Tipps anzeigen</a></li>
+                  </ul>
+                </div>
+            </ul>
+          </li>
+          <li class="bold" style="font-weight: bold"><a href="news.html">News</a></li>
+          <li class="bold" style="font-weight: bold"><a href="stats.html">Statistiken</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> </div>
+    </div>
+    </div>
+  </nav>
+</header>
+
+<!--Hauptinhalt beginnt hier-->
+
+<main>
+    <form id="foo">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="progress" class="progress white">
+          <div class="indeterminate orange"></div>
+        </div>
+        <div id="Spiel1Name"> </div>
+      </div>
+      <div class="row">
+        <div class="right-align">
+          <button class="btn waves-effect waves-light orange white-text" type="submit" value="Send" id="result">Eintragen <i class="mdi-content-send right"></i> </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="Spiel1" style="display:none"></div>
+  </form>
+</main>
+<script data-cfasync="false">
+
+jQuery( document ).ready(function( $ ) {
+	
+	// variable to hold request
+	var request;
+	// bind to the submit event of our form
+	$("#foo").submit(function(event){
+
+		// abort any pending request
+		if (request) {
+			request.abort();
+		}
+		// setup some local variables
+		var $form = $(this);
+		
+		
+		
+		// let's select and cache all the fields
+		var $inputs = $form.find("button, input, select, button, textarea");
+		// serialize the data in the form
+		var serializedData = $form.serialize();
+	
+		// let's disable the inputs for the duration of the ajax request
+		// Note: we disable elements AFTER the form data has been serialized.
+		// Disabled form elements will not be serialized.
+		$inputs.prop("disabled", true);
+	
+		// fire off the request to /form.php
+		request = $.ajax({
+			url: "https://script.google.com/macros/s/AKfycbymohqCiwrzRknolQI_cvHTeybwjCdbziQumKfJidydzrfgKqT2/exec",
+			type: "post",
+			data: serializedData
+		});
+		$('#result').text('Senden...');
+	
+		// callback handler that will be called on success
+		request.done(function (response, textStatus, jqXHR){
+			// log a message to the console
+			$('#result').text('Angenommen');
+			$('#result').parent(this).hide();
+			toast('Tipps sind angenommen', 9000, 'rounded');
+			console.log("Jap, diese Tipps sind angekommen");
+		});
+	
+		// callback handler that will be called on failure
+		request.fail(function (jqXHR, textStatus, errorThrown){
+			// log the error to the console
+			console.error(
+				"The following error occured: "+
+				textStatus, errorThrown
+			);
+		});
+	
+		// callback handler that will be called regardless
+		// if the request failed or succeeded
+		request.always(function () {
+			// reenable the inputs
+			$inputs.prop("disabled", true);
+			$('#result').text('iOS is a Bitch!');
+		});
+	
+		// prevent default posting of form
+		event.preventDefault();
+	});
+});
+
+</script> 
+<!--Skripte--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<script>if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<script src="js/init.js"></script> 
+<script src="src/tabletop.js"></script> 
+
+<!-- Footer beginnt hier-->
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Infos</h5>
+        <p class="grey-text text-lighten-4">Dieses Tippspiel ist eine private Seite, die von MvB geflegt wird. </br>
+          Kontakt: info@panicotippspiel.com</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="faq.html">Regeln und FAQ</a></li>
+          <li><a class="grey-text text-lighten-3" href="addgames.html">Neue Spiele hinzuf&#252;gen</a></li>
+          <li><a class="grey-text text-lighten-3" href="ergebnis.html">Ergebniseingabe</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright" style="background:#3f51b5; border-top:#CCC; border-top:thin; border-top-style:solid">
+    <div class="container"> &#169; 2015 Panicotippspiel </div>
+  </div>
+</footer>
+</body>
+</html>

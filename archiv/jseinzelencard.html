@@ -1,0 +1,24 @@
+	//Anfang Spiel5 
+	//Daten abrufen  
+	var Spiel5Art = data[0].Art;
+	var Spiel5M1 = data[0].M1;
+	var Spiel5M2 = data[0].M2;
+	var Spiel5Beschreibung = data[0].Beschreibung;
+	var Spiel5Datum = data[0].Datum;
+	var Spiel5Abgegeben = data[0].Abgegeben;
+	var Spiel5Nummer = data[0].Nr;
+	Spiel5NummerOutput = "<select name='Spiel5Nr'><option>" + Spiel5Nummer + "</option></select>"
+	//Findet Spiel statt?
+	if (Spiel5Art == "Kein"){
+		//Kein Spiel findet statt
+		Spiel5Output = "<div class='col s12 m6'><div class='card-panel orange'><span class='white-text'>Leider finden in den nächsten 10 Tagen keine zu tippenden Spiele statt. Bitte schau in ein paar Tagen nochmal vorbei! Danke</span></div></div>"
+	}else if (Spiel5Art == "Normal"){
+		//Normales Spiel findet statt
+		Spiel5Output = "<div class='col s12 m6'><div class='card'><div class='card-content'><p style='font-size:larger; font-weight:bold'>"+ Spiel5M1 + " vs. " + Spiel5M2 + "</p><p style='font-size:smaller; font-weight:inherit; color:#999'>" + Spiel5Beschreibung + "</p><p><div class='input-field col s12 m6'><input id='Spiel51M1id' type='number' class='validate' name='Spiel5ScoreM1'><label for='Spiel51M1id'>Heim</label></div><div class='input-field col s12 m6'><input id='Spiel51M2id' type='number' class='validate' name='Spiel5ScoreM2'><label for='Spiel5M2id'>Gast</label></div></p><p style='font-size:smaller; font-weight:inherit; color:#999'>" + Spiel5Datum + "</p><p style='font-size:smaller; font-weight:inherit; color:#F90'>" + Spiel5Abgegeben + "</p></div></div>";
+	} else if (Spiel5Art == "ko"){
+		    $('select').material_select();
+		Spiel5Output = "<div class='col s12 m6'><div class='card'><div class='card-content'><p style='font-size:larger; font-weight:bold'>"+ Spiel5M1 + " vs. " + Spiel5M2 + "</p><p style='font-size:smaller; font-weight:inherit; color:#999'>" + Spiel5Beschreibung + "</p><p><div class='input-field col s12 m6'><input id='Spiel51M1id' type='number' class='validate' name='Spiel5ScoreM1'><label for='Spiel51M1id'>Heim</label></div><div class='input-field col s12 m6'><input id='Spiel51M2id' type='number' class='validate' name='Spiel5ScoreM2'><label for='Spiel51M2id'>Gast</label></div></p><div><p class='hide-on-med-and-down col s12 m6'><select name='Spiel5Length'><option value='' disabled selected>L&#228;nge</option><option value='90'>90</option><option value='120'>120</option><option value='11er'>11er</option></select></p><p class='hide-on-large-only col s12 m6' style='padding-bottom: 10px'><select class='browser-default' name='Spiel5Length'><option value='' disabled selected>L&#228;nge</option><option value='90'>90</option><option value='120'>120</option><option value='11er'>11er</option></select></p><p class='hide-on-med-and-down col s12 m6'><select name='Spiel5Sieger'><option value='' disabled selected>Sieger</option><option value='" + Spiel5M1 + "'>" + Spiel5M1 + "</option><option value='" + Spiel5M2 + "'>" + Spiel5M2 + "</option></select></p><p class='hide-on-large-only col s12 m6' style='padding-bottom: 20px'><select class='browser-default' name='Spiel5Sieger'><option value='' disabled selected>Sieger</option><option value='" + Spiel5M1 + "'>" + Spiel5M1 + "</option><option value='" + Spiel5M2 + "'>" + Spiel5M2 + "</option></select></p></div><p style='font-size:smaller; font-weight:inherit; color:#999'>" + Spiel5Datum + "</p><p style='font-size:smaller; font-weight:inherit; color:#F90'>" + Spiel5Abgegeben + "</p></div></div>";
+	}
+	document.getElementById("Spiel5Name").innerHTML=Spiel5Output;
+	document.getElementById("Spiel5").innerHTML=Spiel5NummerOutput;
+	//Ende Spiel5
