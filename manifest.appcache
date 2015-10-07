@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 13-09-2015: v0.96
+# 07-10-2015: v0.97
 
 # Explicitly cached entries
 offline.html
@@ -10,7 +10,7 @@ css/materialize.min.css
 FALLBACK:
 / offline.html
 
-# All other resources (e.g. sites) require the user to be online. 
+# All other resources (e.g. sites) require the user to be online.
 NETWORK:
 *
 newsinclude.inc.php
@@ -25,6 +25,7 @@ CACHE:
 img/materializecss.png
 img/rss.png
 img/twitter.png
+img/maxvonbeust.png
 logo.png
 logonav.png
 twitternews.png
