@@ -1,11 +1,11 @@
 <?php
-	 	
+
       $cachefile = "cache/news.html";
       $cachetime = 300 * 60; // 60 minutes
-	  
+
       // Serve from the cache if it is younger than $cachetime
       if (file_exists($cachefile) && (time() - $cachetime
-         < filemtime($cachefile))) 
+         < filemtime($cachefile)))
       {
          include($cachefile);
          echo "<!-- Cached ".date('jS F Y H:i', filemtime($cachefile))."-->";
@@ -14,7 +14,7 @@
       ob_start(); // start the output buffer
 ?>
 <div id="masonry-grid" class="row">
-      <?php 
+      <?php
 	  $aufgerufen = 0;
 	  function fetch_og($url)
 	  {
@@ -28,13 +28,13 @@
 	  	  $data = curl_exec($ch);
 		  $dom = new DomDocument;
 		  @$dom->loadHTML($data);
-		   
+
 		  $xpath = new DOMXPath($dom);
 		  # query metatags with og prefix
 		  $metas = $xpath->query('//*/meta[starts-with(@property, \'og:\')]');
-	  
+
 		  $og = array();
-	  
+
 		  foreach($metas as $meta){
 			  # get property name without og: prefix
 			  $property = str_replace('og:', '', $meta->getAttribute('property'));
@@ -42,11 +42,11 @@
 			  $content = $meta->getAttribute('content');
 			  $og[$property] = $content;
 		  }
-	  	  
+
 		  return $og['image'];
 	  };
-	  
-	  // Parsing this spreadsheet: 
+
+	  // Parsing this spreadsheet:
 	  $url = 'https://spreadsheets.google.com/feeds/list/1DfqbxCNBjXuTiCujaSa-Ze4xYDA5VpHQ1LSvFmPFuD0/o5n7ih9/public/values?alt=json';
 	  //$file= file_get_contents($url);
 	  $ch = curl_init();
@@ -72,18 +72,18 @@
 		  $images = fetch_og($link);
 		  $aufgerufen = $aufgerufen + 1;
 		};
-		
+
 		if($title != ""){
 		//Card wird erstellt
 		$ausgabe .= '<div class="col s12 m6"><div class="card">';
 		//Prüfung, ob ein Bild vorhanden ist
-		if($images == '' or $images == 'Wird geladen...' or $images == '#N/A' or $images == 'Loading...'){
-		}else{	
+		if($images == '' or $images == 'Wird geladen...' or $images == '#N/A' or $images == 'Loading...' or $images == '#Error!'){
+		}else{
 		  $images = mb_convert_encoding($images,"HTML-ENTITIES","UTF-8");
 		  $ausgabe .= '<div class="card-image"  style="max-height: 250px; overflow: hidden"><img src="' . $images . '" ></div>';
 		};
 		//Card Inhalt wird zusammengetragen
-		
+
 		$ausgabe .= '<div class="card-content"><p style="font-size:larger; font-weight:bold">' . $title	 . '</p><p style="font-size:smaller; font-weight:inherit; color:#999">' . $autor . ' am  <b id="stand' . $i .'" style="font-weight:inherit; color:#999; text-transform:none;"></b></a><script>var wochentag = new Array("Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag");var monat = new Array("Januar", "Februar", "M&auml;rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");var strDateTime = "' . $datum . '";var myDate = new Date(strDateTime);var stunden = myDate.getHours();minuten = ("0"+myDate.getMinutes()).slice(-2);var tag = myDate.getDate();var monatDesJahres = myDate.getMonth();var tagInWoche = myDate.getDay();var datum =  tag + ". " + monat[monatDesJahres];document.getElementById("stand'. $i .'").innerHTML = datum;</script> </p></div><div class="card-action"><p style="font-size:14px; font-weight:inherit">' . $text . '</p></div><div class="card-action"> <a href="' . $link . '" target="_blank">Weiterlesen' . $seite . '</a></div></div></div>';
 		};
 	    $i = $i +1;
@@ -95,7 +95,7 @@
 	  $ausgabe .= '<script type="text/javascript"> console.log('.$aufgerufen .')</script>';
 	  print($ausgabe);
 	  ?>
-    </div>   
+    </div>
 <script>
     //masonry start
     var $container = $('#masonry-grid');
@@ -107,14 +107,14 @@ $container.imagesLoaded( function() {
     });
 });
 </script>
-<script src="js/masonry.pkgd.min.js"></script> 
+<script src="js/masonry.pkgd.min.js"></script>
 <?php
 	   // open the cache file for writing
-       $fp = fopen($cachefile, 'w'); 
+       $fp = fopen($cachefile, 'w');
        // save the contents of output buffer to the file
 	    fwrite($fp, ob_get_contents());
 		// close the file
-        fclose($fp); 
+        fclose($fp);
 		// Send the output to the browser
-        ob_end_flush(); 
+        ob_end_flush();
 ?>
