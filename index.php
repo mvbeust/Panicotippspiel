@@ -50,7 +50,7 @@ include 'nav.inc.php';
       </div>
     </div>
     <div id="test">
-      <div id="loading" class="animated pulse infinite center-align" style="padding-top:50px"> <a href="javascript:history.go(0)"><img src="logo.png" height="70px"></a> 
+      <div id="loading" class="animated pulse infinite center-align" style="padding-top:50px"> <a href="javascript:history.go(0)"><img src="logo.png" height="70px"></a>
         <!-- Möglichkeit zur Einbindung eines beliebigen Spruchs-->
         <?php /*?>  <?php
   $zu = mt_rand(0,30);
@@ -63,7 +63,7 @@ include $zu.'.inc.php';
 <script type="text/javascript" data-cfasync="false">
 
 jQuery( document ).ready(function( $ ) {
-	
+
 	// variable to hold request
 	var request;
 	// bind to the submit event of our form
@@ -77,18 +77,18 @@ jQuery( document ).ready(function( $ ) {
 		var $form = $(this);
 		$('#result').attr("class", "btn grey white-text inactive");
 		$('#result').text('Senden...');
-		
-		
+
+
 		// let's select and cache all the fields
 		var $inputs = $form.find("button, input, select, button, textarea");
 		// serialize the data in the form
 		var serializedData = $form.serialize();
-	
+
 		// let's disable the inputs for the duration of the ajax request
 		// Note: we disable elements AFTER the form data has been serialized.
 		// Disabled form elements will not be serialized.
 		$inputs.prop("disabled", true);
-	
+
 		// fire off the request to /form.php
 		request = $.ajax({
 			url: "https://script.google.com/macros/s/AKfycbwk7feBHdJEWoYAEfobUktDmX6J4HCmPlD3toUD-Loxs_AMK1Vz/exec",
@@ -96,7 +96,7 @@ jQuery( document ).ready(function( $ ) {
 			data: serializedData
 		});
 
-	
+
 		// callback handler that will be called on success
 		request.done(function (response, textStatus, jqXHR){
 			// log a message to the console
@@ -105,7 +105,7 @@ jQuery( document ).ready(function( $ ) {
 			toast('Tipps sind angenommen', 9000);
 			console.log("Jap, diese Tipps sind angekommen");
 		});
-	
+
 		// callback handler that will be called on failure
 		request.fail(function (jqXHR, textStatus, errorThrown){
 			// log the error to the console
@@ -114,7 +114,7 @@ jQuery( document ).ready(function( $ ) {
 				textStatus, errorThrown
 			);
 		});
-	
+
 		// callback handler that will be called regardless
 		// if the request failed or succeeded
 		request.always(function () {
@@ -122,20 +122,20 @@ jQuery( document ).ready(function( $ ) {
 			$('#result').text('Tipps wohl angenommen');
 			$_POST = array();
 		});
-	
+
 		// prevent default posting of form
 		event.preventDefault();
 	});
 });
 
-</script> 
+</script>
 
-<!--Skripte--> 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
-<script src="js/jquery.timeago.js" type="text/javascript"></script> 
-<script type="text/javascript">if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script> 
-<script type="text/javascript" src="js/materialize.min.js"></script> 
-<script src="js/init.js"></script> 
+<!--Skripte-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">if (!window.jQuery) { document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>'); }</script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/init.js"></script>
 <script type="text/javascript">
 //Hier werden mobile und desktop in sync gebracht
 jQuery.cookie = function(name, value, options) {
