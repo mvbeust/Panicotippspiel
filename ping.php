@@ -3,8 +3,6 @@ $config = array(
     'site_title' => 'Panicotippspiel News',
     'site_url'   => 'http://www.panicotippspiel.com/news',
     'feed_url'   => 'http://www.panicotippspiel.com/feed',
-    /* PubSubHubbub
-     * If you're not sure, just use this one (it's run by Google) */
     'hub_endpoint' => 'http://panicomax.superfeedr.com/'
 );
 /**
